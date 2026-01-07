@@ -39,5 +39,5 @@ print("track_visibility unique values:", torch.unique(tracks["track_visibility"]
 path = tracks["track_path"][:,0,:].numpy()
 plt.plot(path[:,0], path[:,1], marker='o')
 plt.gca().invert_yaxis()
-plt.title("Test Trajektorie")
+plt.title("Test trajectory")
 plt.show()
