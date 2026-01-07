@@ -14,7 +14,7 @@ class CoordsToWanTracks:
                 "width": ("INT", {"default": 720}),
                 "height": ("INT", {"default": 720}),
                 "num_frames": ("INT", {"default": 81}),
-                "normalized": ("BOOL", {"default": True})  # True=0-1, False=pixel
+                "normalized": ("BOOLEAN", {"default": False})  # True=0-1, False=pixel
             }
         }
 
