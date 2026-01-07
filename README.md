@@ -13,7 +13,7 @@ This custom node allows you to convert trajectories from JSON files directly int
 
 ## Installation
 
-1. Copy the node to `custom_nodes/wan_coords_adapter/coords_to_tracks.py`  
+1. Copy the node to `custom_nodes/ComfyUI-WanMove-Adapter/coords_to_tracks.py`  
 2. Restart ComfyUI  
 3. The node will appear under `WanMove/Adapters`
 
