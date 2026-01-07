@@ -36,14 +36,14 @@ class CoordsToWanTracks:
         pts_torch = torch.from_numpy(pts_np)
         pts_torch = pts_torch.permute(1,0,2)  # (T_old, N, 2)
 
-        # --- Interpolation auf gewünschte Frame-Anzahl ---
+        # --- Interpolation to desired frame count ---
         T_old, N, _ = pts_torch.shape
         if T_old != num_frames:
             pts_torch = F.interpolate(
                 pts_torch.permute(1,2,0), size=num_frames, mode='linear', align_corners=True
             ).permute(2,0,1)
 
-        # --- Pixel oder normalisiert ---
+        # --- Pixel or normalized ---
         if not normalized:
             pts_torch[:,:,0] *= width
             pts_torch[:,:,1] *= height
