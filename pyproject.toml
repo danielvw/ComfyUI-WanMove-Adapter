@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-wanmove-adapter" 
+description = "Transform trajectory data from JSON files into WanMove TRACKS format"
+version = "1.0.0" 
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/danielvw/ComfyUI-WanMove-Adapter"
+
+[tool.comfy]
+PublisherId = "danielvw" 
+DisplayName = "WanMove Adapter"
+Icon = ""
