@@ -4,3 +4,5 @@ __pycache__/
 *.pyd
 .Python
 *.so
+node.zip
+.github
